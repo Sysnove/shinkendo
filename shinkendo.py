@@ -151,5 +151,9 @@ def recheck(ctx, host, service):
     run_shinken_command("%s/action/%s/%s/$NOW$" % (baseurl, action, elt))
 
 
-if __name__ == "__main__":
+def main():
     cli(auto_envvar_prefix="SHINKEN", obj={})
+
+
+if __name__ == "__main__":
+    main()

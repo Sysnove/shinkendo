@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name='shinkendo',
-    version='0.2',
+    version='0.2.1',
     packages=find_packages(),
     description='A Shinken CLI.',
     author='Guillaume Subiron',
@@ -22,7 +22,7 @@ setup(
     py_modules=['shinkendo'],
     entry_points='''
         [console_scripts]
-        shinkendo=shinkendo:cli
+        shinkendo=shinkendo:main
     ''',
     license="WTFPL",
 )
